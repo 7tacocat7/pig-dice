@@ -1,13 +1,17 @@
-document.querySelector('input[type=button]').addEventListener('click', function(){rollTheDice();});
+// // Buisness logic
+var rollDice = function(){
+  return Math.floor(Math.random() * 6) + 1;
 
-var rollTheDice = function() {
-    var i,
-        faceValue,
-        output = '',
-        diceCount = document.querySelector('input[type=number]').value || 1;
-    for (i = 0; i < diceCount; i++) {
-        faceValue = Math.floor(Math.random() * 6);
-        output += "&#x268" + faceValue + "; ";
-    }
-    document.getElementById('dice').innerHTML = output;
 }
+
+
+
+$(document).ready(function(){
+  $("#rollButton").click(function() {
+
+    var roll= rollDice
+    $("span#die1").text(roll);
+    $("span#die2").text(roll);
+      event.preventDefault();
+  });
+});
