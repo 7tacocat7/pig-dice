@@ -14,7 +14,7 @@ _Pig-dice is a  webpage game where the players roll dice to accumulate a score. 
 | Behavior      | Input         | Output        |
 | ------------- | ------------- | ------------- |
 |roll dice |        click        |       random number 1-6        |
-|roll 1        |the number 1         |      display message         |
+|count score for player|dice roll (number) |   dice roll + previous score    |
 |               |               |               |
 |               |               |               |
 |               |               |               |

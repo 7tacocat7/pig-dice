@@ -15,7 +15,7 @@
 /*#dice {
   font-size: 6rem;*/
 }
-.dice{
+/*.dice{
   float: left;
   witdth: 32px;
   background:#F5F5F5;
@@ -24,4 +24,5 @@
   font-size: 24px;
   text-align: center;
   margin: 5px;
-}
+}*/
+#die1 {font-size: 6rem;}

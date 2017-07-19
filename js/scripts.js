@@ -3,7 +3,7 @@ var rollDice = function(){
   return Math.floor(Math.random() * 6) + 1;
 
 }
-
+var player_score =
 
 
 $(document).ready(function(){

@@ -25,14 +25,47 @@
             </td>
             <td>
               <div id="header">
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra posuere vehicula. Nam in odio id leo vehicula gravida. Nam eu orci in nisl egestas elementum. Quisque accumsan ex ac nibh interdum, in tincidunt mi ornare. Praesent id turpis varius, posuere neque sed, consectetur nulla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce tincidunt mi ac hendrerit tempus. Donec tristique, nibh mollis laoreet consequat, dolor velit pulvinar dui, ac pretium lorem metus eu lectus. Nullam ultrices laoreet sem, porttitor gravida sapien condimentum vitae. Vivamus finibus et ipsum id pulvinar. Nullam volutpat faucibus dolor, eget elementum eros consequat tempus.</p>
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputAmount">Player Name (You)</label>
+                    <div class="input-group">
+                      <div class="input-group-addon"></div>
+                      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Player Name">
+                      <div class="input-group-addon"></div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Add player</button>
+                </form>
+              <button type="button" class="btn btn-warning btn-lg btn-block">Restart</button>
               </div>
               <div id="content">
-                <p> Proin volutpat varius tortor, a dictum odio posuere mattis. Sed eleifend laoreet dictum. Curabitur nibh arcu, consequat in tortor nec, tempor varius lorem. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus at ex sit amet diam cursus eleifend. Fusce lacinia aliquam felis hendrerit vulputate. Nam et quam diam. Vivamus hendrerit sit amet nulla at cursus. Pellentesque ut nulla nec metus facilisis imperdiet et non metus. Donec eu semper neque. Mauris egestas placerat mauris, ut finibus urna ullamcorper vitae. Proin tincidunt ipsum eu orci porttitor eleifend. Etiam purus ipsum, porttitor sed viverra ac, dictum eget tortor. Aenean lobortis finibus volutpat. Aenean congue venenatis risus a scelerisque. Cras gravida, felis vel congue accumsan, ex diam imperdiet orci, id sagittis lectus ex a ex.
-
-                Maecenas posuere elit vitae diam commodo, vitae porta justo hendrerit. Aliquam accumsan metus at nisi viverra elementum. Fusce tristique nisl sed viverra rutrum. Nullam sagittis et felis et feugiat. Morbi in ex vel nulla ultrices feugiat. Integer ullamcorper leo ac sapien fringilla, quis tincidunt dui laoreet. Donec dictum turpis non varius condimentum.
-
-                Mauris varius vulputate leo in mollis. Nunc eget mi quis ante imperdiet rutrum. Etiam sed turpis non eros rutrum tempor. Curabitur in feugiat neque, non vulputate risus. Donec semper ullamcorper lorem, id ornare risus hendrerit at. Nam porttitor massa ante, a consectetur sem congue ut. Donec accumsan eu odio et consectetur.</p>
+                  <table class="table table-bordered">
+                    <tr>
+                      <th>Player(s)</th>
+                      <th>Score</th>
+                      <th>Turn</th>
+                    </tr>
+                    <tr>
+                      <th class= "player1"></th>
+                      <th class= "player1"></th>
+                      <th class= "player1"></th>
+                    </tr>
+                    <tr>
+                      <th class= "player2"></th>
+                      <th class= "player2"></th>
+                      <th class= "player2"></th>
+                    </tr>
+                    <tr>
+                      <th class= "player3"></th>
+                      <th class= "player3"></th>
+                      <th class= "player3"></th>
+                    </tr>
+                    <tr>
+                      <th class= "player4"></th>
+                      <th class= "player4"></th>
+                      <th class= "player4"></th>
+                    </tr>
+                  </table>
               </div>
               <div id="footer">
                 <span id="die1" class="dice">0
@@ -40,8 +73,8 @@
                 <span id="die2" class="dice">0
                 </span>
                 <button type="button" class="btn btn-success btn-lg btn-block"   id="rollButton">Roll on!</button>
-                <h2 id="status" style="clear:left;"></h2>
                 <button type="button" class="btn btn-danger btn-lg btn-block">Slow Your Roll!</button>
+
 
 
               </div>
