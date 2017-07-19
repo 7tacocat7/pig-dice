@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style type="text/css">
+    div.dice{
+      float: left;
+      witdth: 32px;
+      background:#F5F5F5;
+      border: #999 1px solid;
+      padding: 10px;
+      font-size: 24px;
+      text-align: center;
+      margin: 5px;
+    }
+    </style>
+    <script>
+    function rollDice(){
+      var die1 = document.getElementById("die1");
+      var die2 = document.getElementById("die2");
+      var status = document.getElementById("status");
+      var d1 = Math.floor(Math.random() * 6) + 1;
+      var d2 = Math.floor(Math.random() * 6) + 1;
+      var diceTotal = d1 + d2;
+      die1.innerHTML = d1;
+      die2.innerHTML = d2;
+      status.innerHTML = "you rolled " +diceTotal+". ";
+      if((d1 || d2) === 1){
+        status.innerHTML += "You Rolled a 1!!! Turn over! Score 0 this round!";
+
+      }
+
+
+    }
+    </script>
     <script scr= "js/jquery-3.2.1.js"></script>
     <script scr= "js/scripts.js"></script>
     <link href = "css/bootstrap.css" rel = "stylesheet" type="text/css">
@@ -37,8 +68,15 @@ Maecenas posuere elit vitae diam commodo, vitae porta justo hendrerit. Aliquam a
 Mauris varius vulputate leo in mollis. Nunc eget mi quis ante imperdiet rutrum. Etiam sed turpis non eros rutrum tempor. Curabitur in feugiat neque, non vulputate risus. Donec semper ullamcorper lorem, id ornare risus hendrerit at. Nam porttitor massa ante, a consectetur sem congue ut. Donec accumsan eu odio et consectetur.</p>
               </div>
               <div id="footer">
-                <button type="button" class="btn btn-success btn-lg btn-block">Roll on!</button>
+                <div id="die1" class="dice">0
+                </div>
+                <div id="die2" class="dice">0
+                </div>
+                <button onclick = "rollDice()" type="button" class="btn btn-success btn-lg btn-block">Roll on!</button>
+                <h2 id="status" style="clear:left;"></h2>
                 <button type="button" class="btn btn-danger btn-lg btn-block">Slow Your Roll!</button>
+
+
               </div>
             </td>
           </tr>
