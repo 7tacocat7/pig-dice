@@ -29,14 +29,22 @@
                 <p></p>
                 <form class="form-inline">
                   <div class="form-group">
-                    <label class="sr-only" for="player">Player Name (You)</label>
+                    <label class="sr-only" for="player">Player1 Name (You)</label>
                     <div class="input-group">
                       <div class="input-group-addon"></div>
-                      <input type="text" class="form-control" id="player" placeholder="Player Name">
+                      <input type="text" class="form-control" id="player" placeholder="Player1 Name">
                       <div class="input-group-addon"></div>
                     </div>
                   </div>
-                  <button id ="player" type="submit" class="btn btn-primary">Add player</button>
+                  <div class="form-group">
+                    <label class="sr-only" for="player2">Player2 Name (Them)</label>
+                    <div class="input-group">
+                      <div class="input-group-addon"></div>
+                      <input type="text" class="form-control" id="player2" placeholder="Player2 Name">
+                      <div class="input-group-addon"></div>
+                    </div>
+                  </div>
+                  <button id ="player" type="submit" class="btn btn-primary">Add players</button>
                 </form>
               <button type="button" class="btn btn-warning btn-lg btn-block">Restart</button>
               </div>
@@ -65,9 +73,21 @@
                       </th>
                     </tr>
                     <tr>
-                      <th class= "player2"></th>
-                      <th class= "player2"></th>
-                      <th class= "player2"></th>
+                      <th class= "player2">
+                        <ul id="player2name">
+
+                        </ul>
+                      </th>
+                      <th class= "player2">
+                        <ul id="player2score">
+
+                        </ul>
+                      </th>
+                      <th class= "player2">
+                        <ul id="player2turn">
+
+                        </ul>
+                      </th>
                     </tr>
                   </table>
               </div>

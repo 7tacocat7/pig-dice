@@ -10,6 +10,7 @@ $(document).ready(function(){
   $("form.form-inline").submit(function(event) {
     event.preventDefault();
     var inputtedName = $("input#player").val();
+    var inputtedName2 = $("input#player2").val();
 
     // var addPlayer = new Player(inputtedName,);
 
@@ -27,6 +28,11 @@ $(document).ready(function(){
     console.log(addPlayer.name);
     console.log(addPlayer.score);
     console.log(addPlayer.turn);
+
+    var addPlayer2 = new Player(inputtedName2,0,0);
+    console.log(addPlayer2.name);
+    console.log(addPlayer2.score);
+    console.log(addPlayer2.turn);
 
    // Player.prototype.Score = function() {
    //   if(|| ) {
@@ -55,6 +61,9 @@ $(document).ready(function(){
      $("ul#player1name").append("<span class='player_1'>" + addPlayer.name + "</span>");
      $("ul#player1score").append("<span class='player_1'>" + addPlayer.score + "</span>");
      $("ul#player1turn").append("<span class='player_1'>" + addPlayer.score + "</span>");
+     $("ul#player2name").append("<span class='player_1'>" + addPlayer2.name + "</span>");
+     $("ul#player2score").append("<span class='player_1'>" + addPlayer2.score + "</span>");
+     $("ul#player2turn").append("<span class='player_1'>" + addPlayer2.score + "</span>");
 
     //  $("input#player").val("");
 
