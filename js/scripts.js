@@ -9,6 +9,7 @@ $(document).ready(function(){
   // U/I logic
   $("form.form-inline").submit(function(event) {
     event.preventDefault();
+    $("#header").hide();
     var inputtedName = $("input#player").val();
     var inputtedName2 = $("input#player2").val();
 
