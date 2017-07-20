@@ -74,5 +74,15 @@ $(document).ready(function(){
     $("span#die1").text(roll);
     $("span#die2").text(roll);
 
+
   });
+  $("#rollButton2").click(function() {
+
+    var roll= rollDice
+    $("span#die3").text(roll);
+    $("span#die4").text(roll);
+
+
+  });
+
 });
