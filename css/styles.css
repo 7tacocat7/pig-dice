@@ -3,6 +3,7 @@
 
 
 }
+
 .jumbotron {
   background-image: url("img/pigs.jpg");
   text-align: center;
@@ -12,11 +13,10 @@
   margin: 0;
   -webkit-text-stroke: 2px red;
 }
-/*#dice {
-  font-size: 6rem;*/
+
 }
-/*.dice{
-  float: left;
+.dice{
+  float: center;
   witdth: 32px;
   background:#F5F5F5;
   border: #999 1px solid;
@@ -24,5 +24,8 @@
   font-size: 24px;
   text-align: center;
   margin: 5px;
-}*/
+}
 #die1 {font-size: 6rem;}
+#die2 {font-size: 6rem;}
+#die3 {font-size: 6rem;}
+#die4 {font-size: 6rem;}
