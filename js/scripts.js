@@ -10,7 +10,8 @@ $(document).ready(function(){
   $("form.form-inline").submit(function(event) {
     event.preventDefault();
     var inputtedName = $("input#player").val();
-    var addPlayer = new Player(inputtedName);
+
+    // var addPlayer = new Player(inputtedName,);
 
 
 
@@ -18,18 +19,15 @@ $(document).ready(function(){
 
 
    function Player(name,score,turn){
-     this.name = name;
-     this.score = score;
-     this.turn = turn;
+     this.name = name,
+     this.score = score,
+     this.turn = turn
    }
+    var addPlayer = new Player(inputtedName,0,0);
+    console.log(addPlayer.name);
+    console.log(addPlayer.score);
+    console.log(addPlayer.turn);
 
-   Player.prototype.newPlayer = function() {
-     return 0 + this.Name + this.Score + this.Turn;
-   }
-
-   Player.prototype.Name = function() {
-     return inputtedName;
-     }
    // Player.prototype.Score = function() {
    //   if(|| ) {
    //     return ;
@@ -43,12 +41,20 @@ $(document).ready(function(){
    //     return  ;
    //   }
    // }
+   Player.prototype.start = function() {
+   return this.name + " " + this.score + " " + this.turn+ " ";
+   }
 
+   Player.prototype.newPlayer = function() {
+     return 0 + this.Name + this.Score + this.Turn;
+   }
     var inputtedName = " ";
     var score = 0;
     var turn = 0;
 
-     $("ul#player1name").append("<span class='player_1'>" + addPlayer.Name + "</span>");
+     $("ul#player1name").append("<span class='player_1'>" + addPlayer.name + "</span>");
+     $("ul#player1score").append("<span class='player_1'>" + addPlayer.score + "</span>");
+     $("ul#player1turn").append("<span class='player_1'>" + addPlayer.score + "</span>");
 
     //  $("input#player").val("");
 
